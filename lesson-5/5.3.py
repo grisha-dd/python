@@ -5,6 +5,7 @@
 print("Сотрудники с окладом не менее 20 тысяч:")
 with open("text_3.txt", "r", encoding="utf-8") as info:
     d_info = {}
+    # d_info = {line.split()[0]: float(line.split()[1]) for line in f}
     for line in info:
         key, value = line.split()
         d_info[key] = float(value)
