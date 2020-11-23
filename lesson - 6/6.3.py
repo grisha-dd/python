@@ -14,8 +14,6 @@ class Worker:
 
 
 class Position(Worker):
-    def __init__(self, name, surname, position, **income):
-        super().__init__(name, surname, position, **income)
 
     def get_full_name(self):
         print(f"Полное имя сотрудника: {self.name} {self.surname}")
